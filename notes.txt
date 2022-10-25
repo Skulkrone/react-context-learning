@@ -1,0 +1,15 @@
+API de contexte va servir à englober notre app pour lui fournir des données au composant sur tous les enfants, du parent à l'enfant qu'on veut hydrater.
+
+Context API vs Redux : les 2 sont des states managers.
+
+Redux utilise en interne l'API de contexte.
+
+Api de contexte sert à changer de thème, gérer l'authentification puis montrer une partie privée pour l'utlisateur, changer les langues d'une appli web.
+
+Redux : gérer une grande apllication avec bcp de states & de maj ciblées, avec des filtres, des boutons qui vont chnager des choses à pleisnd 'endroit de l'application, ile vaut mieux utiliser Redux. 
+Avantage : 
+* ne pas mettre à jour des composants qui utiliseraient du state entre parent et enfant
+* mettre des middleware (un module redux qui permet d'écrire des fonctions de création d'actions qui retournent une fonction ou une Promise au lieu de retourner une simple action. Cette fonction retournée reçoit les méthodes dispatch et getState du store en paramètre.)
+
+API de contexte pour des chgts globaux
+Redux pour des grands applications avec bcp de states qui ont besoin de bcp de maj et de pas mal de fonctionnalités.
